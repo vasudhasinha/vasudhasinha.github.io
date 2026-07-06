@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Played Truant | Vasudha Sinha</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'playful-mint': '#a7f3d0',
+                        'playful-coral': '#fda4af',
+                        'playful-yellow': '#fef08a',
+                        'playful-blue': '#bfdbfe',
+                        'playful-dark': '#334155',
+                        'playful-bg': '#fffbf0',
+                    },
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                        display: ['Fredoka One', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-playful-bg text-playful-dark font-sans min-h-screen flex flex-col justify-between items-center relative overflow-hidden selection:bg-playful-coral selection:text-white px-4">
+
+    <!-- Decorative background blobs -->
+    <div
+        class="absolute top-0 left-0 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-playful-mint/30 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none">
+    </div>
+    <div
+        class="absolute bottom-0 right-0 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-playful-yellow/30 rounded-full blur-3xl translate-x-1/3 translate-y-1/3 -z-10 pointer-events-none">
+    </div>
+
+    <!-- Empty header to help align content center -->
+    <div></div>
+
+    <!-- Main Content -->
+    <main class="text-center max-w-lg z-10 my-auto py-12">
+        <div class="relative inline-block mb-8">
+            <div class="text-[120px] sm:text-[150px] font-display text-playful-coral leading-none select-none drop-shadow-[4px_4px_0px_rgba(51,65,85,1)]">
+                404
+            </div>
+            <!-- Floating emoji -->
+            <div class="absolute -top-4 -right-4 text-5xl sm:text-6xl animate-bounce" style="animation-duration: 2.5s;">
+                🏫
+            </div>
+        </div>
+
+        <h1 class="font-display text-3xl sm:text-4xl text-playful-dark mb-4 leading-snug">
+            Oops! This page played truant... 🏃‍♂️💨
+        </h1>
+        
+        <p class="text-lg font-bold text-gray-500 mb-10 leading-relaxed">
+            It looks like this page skipped class and went recess-hunting early! Let's get you back to the main lesson.
+        </p>
+
+        <div>
+            <a href="index.html"
+                class="inline-block bg-playful-coral text-white font-display text-lg px-8 py-4 rounded-full border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-1 active:translate-y-0 active:shadow-[2px_2px_0px_0px_rgba(51,65,85,1)] transition-all">
+                Back to Class 🎒
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full text-center py-6 font-bold text-gray-400 select-none">
+        <p>&copy; 2026 Vasudha Sinha. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

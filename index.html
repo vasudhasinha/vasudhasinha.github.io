@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasudha Sinha - Educator & CS Pro</title>
+
+    <!-- SEO Tags -->
+    <meta name="title" content="Vasudha Sinha - Educator & Customer Support Expert">
+    <meta name="description"
+        content="Portfolio of Vasudha Sinha, an Academic Leader and Customer Support Professional with 7+ years of combined experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vasudha Sinha - Educator & Customer Support Expert">
+    <meta property="og:description"
+        content="Portfolio of Vasudha Sinha, an Academic Leader and Customer Support Professional with 7+ years of combined experience.">
+    <meta property="og:image" content="dp.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'playful-mint': '#a7f3d0',
+                        'playful-coral': '#fda4af',
+                        'playful-yellow': '#fef08a',
+                        'playful-blue': '#bfdbfe',
+                        'playful-dark': '#334155',
+                        'playful-bg': '#fffbf0',
+                    },
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                        display: ['Fredoka One', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body
+    class="bg-playful-bg text-playful-dark font-sans relative overflow-x-hidden selection:bg-playful-coral selection:text-white">
+
+    <!-- Decorative background blobs -->
+    <div
+        class="fixed top-0 left-0 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-playful-mint/30 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none">
+    </div>
+    <div
+        class="fixed top-[20%] right-0 w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-playful-yellow/20 rounded-full blur-3xl translate-x-1/3 -z-10 pointer-events-none">
+    </div>
+    <div
+        class="fixed bottom-0 left-1/4 w-[250px] h-[250px] md:w-[400px] md:h-[400px] bg-playful-blue/20 rounded-full blur-3xl -z-10 pointer-events-none">
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar"
+        class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b-4 border-transparent transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 h-20 flex justify-between items-center">
+            <a href="#home"
+                class="font-display text-2xl text-playful-coral hover:scale-105 transition-transform">Vasudha.</a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-6 font-bold text-gray-500 items-center">
+                <a href="#about" class="hover:text-playful-coral transition-colors">About</a>
+                <a href="#experience" class="hover:text-playful-coral transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-playful-coral transition-colors">Skills</a>
+                <a href="#education" class="hover:text-playful-coral transition-colors">Education</a>
+                <!-- Dropdown for Desktop CV -->
+                <div class="relative group">
+                    <button
+                        class="bg-playful-mint text-playful-dark px-4 py-2 rounded-full border-2 border-playful-dark hover:shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] transition-all flex items-center gap-1 cursor-pointer hover:-translate-y-1">
+                        CV <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="absolute right-0 mt-2 w-56 bg-white border-2 border-playful-dark rounded-xl shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all flex flex-col overflow-hidden z-50">
+                        <a href="Vasudha_Sinha_Teacher_Resume.pdf" type="application/pdf" download class="px-4 py-3 text-sm hover:bg-playful-mint hover:text-playful-dark font-bold text-gray-600 border-b-2 border-playful-dark">Teaching Resume</a>
+                        <a href="Vasudha_Sinha_Customer_Support_Resume.pdf" type="application/pdf" download class="px-4 py-3 text-sm hover:bg-playful-coral hover:text-white font-bold text-gray-600">Customer Support Resume</a>
+                    </div>
+                </div>
+                <a href="#contact"
+                    class="bg-playful-coral text-white px-5 py-2 rounded-full border-2 border-playful-dark hover:shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] transition-all hover:-translate-y-1">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn"
+                class="md:hidden text-playful-dark p-2 focus:outline-none bg-playful-yellow rounded-full border-2 border-playful-dark">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-b-4 border-playful-dark shadow-[0px_8px_0px_0px_rgba(51,65,85,0.1)] absolute w-full">
+            <div class="px-4 py-6 flex flex-col gap-4 text-center font-bold text-lg text-gray-600">
+                <a href="#about" class="hover:text-playful-coral">About</a>
+                <a href="#experience" class="hover:text-playful-coral">Experience</a>
+                <a href="#skills" class="hover:text-playful-coral">Skills</a>
+                <a href="#education" class="hover:text-playful-coral">Education</a>
+                <div class="flex flex-col gap-3 mx-4">
+                    <p class="text-sm uppercase tracking-wide text-gray-400 mb-[-8px]">Download Resumes</p>
+                    <a href="Vasudha_Sinha_Teacher_Resume.pdf" download
+                        class="text-playful-mint bg-playful-dark py-3 rounded-2xl border-2 border-playful-dark">Teaching Resume</a>
+                    <a href="../customer-support/Vasudha_Sinha_Customer_Support_Resume.pdf" download
+                        class="text-white bg-playful-dark py-3 rounded-2xl border-2 border-playful-dark">Customer Support Resume</a>
+                </div>
+                <a href="#contact"
+                    class="text-white bg-playful-coral py-3 rounded-2xl mx-4 border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)]">Contact
+                    Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 md:px-8 min-h-screen flex items-center relative z-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <span
+                    class="inline-flex items-center gap-2 bg-white text-playful-coral font-bold px-4 py-2 rounded-full border-2 border-playful-dark mb-6 text-sm shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] transform -rotate-2 hover:rotate-0 transition-transform">
+                    <span class="text-xl">✨</span> Educator & Customer Support Expert
+                </span>
+                <h1 class="font-display text-5xl sm:text-6xl md:text-7xl text-playful-dark mb-6 leading-[1.1]">
+                    Vasudha <span class="text-playful-coral block sm:inline">Sinha</span>
+                </h1>
+                <p class="text-lg sm:text-xl font-bold text-gray-500 mb-8 max-w-lg leading-relaxed">
+                    Inspiring young minds and delivering exceptional customer experiences through active listening, conflict resolution, and positive engagement. <span class="text-playful-coral">7+ years</span> of combined experience.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact"
+                        class="bg-playful-coral text-white font-display tracking-wide text-lg px-8 py-4 rounded-full border-2 border-playful-dark hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] transition-all hover:-translate-y-1 text-center">
+                        Say Hello 👋
+                    </a>
+                    <div class="relative group inline-block w-full sm:w-auto z-50">
+                        <button
+                            class="w-full bg-white text-playful-dark font-display tracking-wide text-lg px-8 py-4 rounded-full border-2 border-playful-dark hover:bg-playful-mint hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] transition-all hover:-translate-y-1 text-center flex justify-center items-center gap-2 cursor-pointer">
+                            Resumes 📄 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-full min-w-[280px] bg-white border-2 border-playful-dark rounded-xl shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all flex flex-col overflow-hidden">
+                            <a href="Vasudha_Sinha_Teacher_Resume.pdf" download class="px-6 py-4 text-base hover:bg-playful-mint hover:text-playful-dark font-bold text-gray-600 border-b-2 border-playful-dark text-left">👩‍🏫 Teaching Resume</a>
+                            <a href="../customer-support/Vasudha_Sinha_Customer_Support_Resume.pdf" download class="px-6 py-4 text-base hover:bg-playful-coral hover:text-white font-bold text-gray-600 text-left">🎧 Customer Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center lg:justify-end" data-aos="zoom-in" data-aos-duration="1200"
+                data-aos-delay="200">
+                <div class="relative">
+                    <!-- Background decorative blob behind image -->
+                    <div
+                        class="absolute inset-0 bg-playful-coral rounded-[40%_60%_70%_30%/40%_50%_60%_50%] translate-x-4 translate-y-4">
+                    </div>
+
+                    <div
+                        class="w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 relative bg-playful-blue rounded-[30%_70%_70%_30%/30%_30%_70%_70%] shadow-[8px_8px_0px_0px_rgba(51,65,85,1)] border-4 border-playful-dark overflow-hidden flex items-center justify-center p-2 z-10 transition-transform duration-500 hover:rotate-3">
+                        <img src="dp.png" alt="Vasudha Sinha"
+                            class="w-full h-full object-cover rounded-[30%_70%_70%_30%/30%_30%_70%_70%] bg-white border-2 border-white">
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-8 bg-white p-3 sm:p-4 rounded-2xl z-20 flex items-center gap-3 border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] animate-bounce"
+                        style="animation-duration: 3s;">
+                        <div
+                            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-playful-yellow flex items-center justify-center text-xl sm:text-2xl border-2 border-playful-dark">
+                            🏆</div>
+                        <div class="pr-2">
+                            <p class="text-xs font-bold text-gray-500 uppercase">Award</p>
+                            <p class="text-sm sm:text-base font-display text-playful-dark tracking-wide">Teacher of the
+                                Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Summary -->
+    <div class="w-full bg-playful-blue/10 border-t-4 border-playful-dark shadow-[0px_-20px_40px_rgba(51,65,85,0.1)] relative z-20">
+        <section id="about" class="py-20 px-4 sm:px-6 md:px-8 max-w-6xl mx-auto relative">
+            <h2 class="font-display text-4xl text-center mb-12" data-aos="fade-up">About Me 👩‍🏫</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+
+            <div class="lg:col-span-8 bg-white p-8 rounded-3xl border-2 border-playful-dark shadow-[8px_8px_0px_0px_rgba(51,65,85,1)] text-lg font-semibold text-gray-600 leading-relaxed space-y-6"
+                data-aos="fade-right">
+                <p><span class="text-2xl">👋</span> Dynamic <strong class="text-playful-dark">Academic Leader & Customer Support Professional</strong> with 7+ years of combined experience. Proven track record of transforming learning outcomes in education and driving 95%+ CSAT scores in high-volume multichannel support environments.</p>
+
+                <p><span class="text-2xl">🤝</span> Specialized in conflict resolution, de-escalation, and empathetic communication. Adept at using CRM systems like Zendesk to process accounts, resolve complex inquiries, and restore customer confidence efficiently.</p>
+
+                <p><span class="text-2xl">🎓</span> A passionate mentor and collaborative leader, bridging the gap between stakeholders—whether they are students, parents, or enterprise customers. Highly adaptable multi-tasker focused on delivering solutions.</p>
+            </div>
+
+            <div class="lg:col-span-4 bg-playful-yellow p-8 rounded-3xl border-2 border-playful-dark shadow-[8px_8px_0px_0px_rgba(51,65,85,1)] transform rotate-2 hover:rotate-0 transition-transform"
+                data-aos="fade-left">
+                <h3 class="font-display text-2xl text-playful-dark mb-6 border-b-2 border-playful-dark pb-4">At a Glance
+                    📌</h3>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-white border-2 border-playful-dark flex items-center justify-center text-2xl shadow-[2px_2px_0px_0px_rgba(51,65,85,1)]">
+                            ✉️</div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-500 uppercase tracking-wide">Email</p>
+                            <p class="font-bold text-playful-dark text-sm sm:text-base whitespace-nowrap">sinhavasudha1@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-white border-2 border-playful-dark flex items-center justify-center text-2xl shadow-[2px_2px_0px_0px_rgba(51,65,85,1)]">
+                            📍</div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-500 uppercase tracking-wide">Location</p>
+                            <p class="font-bold text-playful-dark">Bangalore, Karnataka</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-white border-2 border-playful-dark flex items-center justify-center text-2xl shadow-[2px_2px_0px_0px_rgba(51,65,85,1)]">
+                            🗣️</div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-500 uppercase tracking-wide">Languages</p>
+                            <p class="font-bold text-playful-dark">English, Hindi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <!-- Work Experience -->
+    <section id="experience" class="py-20 px-4 sm:px-6 md:px-8 bg-playful-mint/30 border-y-4 border-playful-dark relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-display text-4xl mb-12 text-center text-playful-dark" data-aos="fade-up">Experience 🎒</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Job 1: Customer Support -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-playful-dark shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-2 transition-transform h-full flex flex-col"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <div class="mb-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-display text-2xl text-playful-dark leading-tight">Customer Service Associate</h3>
+                            <span
+                                class="bg-playful-coral/20 text-playful-dark font-bold text-xs px-3 py-1 rounded-full border-2 border-playful-dark whitespace-nowrap mt-1">Jul
+                                '23 – Jan '24</span>
+                        </div>
+                        <p class="text-rose-500 font-bold text-lg">Automobile Company</p>
+                    </div>
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-3 mb-4">
+                        <p class="text-sm font-bold text-gray-500">Focus: B2C Support, CRM Zendesk, Conflict Resolution</p>
+                    </div>
+                    <ul class="space-y-3 font-semibold text-gray-600 text-sm flex-grow">
+                        <li class="flex items-start gap-2"><span class="text-playful-coral text-lg leading-none">✨</span>
+                            <span>Managed 40+ daily customer inquiries across chat, email, and phone, maintaining a 95% CSAT rating.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-playful-coral text-lg leading-none">✨</span>
+                            <span>Resolved product issues by clarifying complaints, de-escalating conflicts, and restoring customer confidence.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-playful-coral text-lg leading-none">✨</span>
+                            <span>Earned "Customer Care Star" award for empathy and reducing average response times via cross-department coordination.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Job 2: Academic Coordinator -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-playful-dark shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-2 transition-transform h-full flex flex-col"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-display text-2xl text-playful-dark leading-tight">Academic Coordinator<br><span class="text-lg text-gray-500">(Substitute Teacher)</span></h3>
+                            <span
+                                class="bg-playful-mint text-playful-dark font-bold text-xs px-3 py-1 rounded-full border-2 border-playful-dark whitespace-nowrap mt-1">Mar
+                                '24 – Aug '24</span>
+                        </div>
+                        <p class="text-emerald-600 font-bold text-lg">Pioneer Montessori, Lucknow</p>
+                    </div>
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-3 mb-4">
+                        <p class="text-sm font-bold text-gray-500">Subjects: English, Mathematics, Computer Science (up
+                            to 8th), EVS (1st - 5th)</p>
+                    </div>
+                    <ul class="space-y-3 font-semibold text-gray-600 text-sm flex-grow">
+                        <li class="flex items-start gap-2"><span
+                                class="text-playful-mint text-lg leading-none">✨</span> <span>Orchestrated end-to-end
+                                curriculum delivery and instructional strategy, elevating academic standards across core
+                                subjects.</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="text-playful-mint text-lg leading-none">✨</span> <span>Pioneered the integration
+                                of modern EdTech and practical computer science, driving digital literacy and
+                                interactive learning.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Job 3: Springfield -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-playful-dark shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-2 transition-transform h-full flex flex-col"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <div class="mb-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-display text-2xl text-playful-dark leading-tight">Senior Teacher
+                                &<br>Academic Coordinator</h3>
+                            <span
+                                class="bg-playful-blue text-playful-dark font-bold text-xs px-3 py-1 rounded-full border-2 border-playful-dark whitespace-nowrap mt-1">May
+                                '19 – May '23</span>
+                        </div>
+                        <p class="text-blue-600 font-bold text-lg">Springfield School, Prayagraj</p>
+                    </div>
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-3 mb-4">
+                        <p class="text-sm font-bold text-gray-500">Subjects: English, Mathematics, Computer Science, EVS
+                            | CBSE/ICSE</p>
+                    </div>
+                    <ul class="space-y-3 font-semibold text-gray-600 text-sm flex-grow">
+                        <li class="flex items-start gap-2"><span class="text-playful-blue text-lg leading-none">✨</span>
+                            <span>Managed stakeholder escalations and conducted resolution sessions with 250+ parent accounts, maintaining a 95%+ satisfaction rate.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-playful-blue text-lg leading-none">✨</span>
+                            <span>Spearheaded experiential learning programs and facilitated capacity-building workshops
+                                to upskill fellow educators.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Job 4: Kidzee -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-playful-dark shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-2 transition-transform h-full flex flex-col"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-display text-2xl text-playful-dark leading-tight">Lead Teacher &<br>Subject
+                                Coordinator</h3>
+                            <span
+                                class="bg-playful-yellow text-playful-dark font-bold text-xs px-3 py-1 rounded-full border-2 border-playful-dark whitespace-nowrap mt-1">May
+                                '17 – Apr '19</span>
+                        </div>
+                        <p class="text-amber-600 font-bold text-lg">Kidzee K Planet, Prayagraj</p>
+                    </div>
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-3 mb-4">
+                        <p class="text-sm font-bold text-gray-500">Focus: Early Childhood Education | Play-Way
+                            Methodology</p>
+                    </div>
+                    <ul class="space-y-3 font-semibold text-gray-600 text-sm flex-grow">
+                        <li class="flex items-start gap-2"><span
+                                class="text-playful-yellow text-lg leading-none">✨</span> <span>Architected an engaging
+                                early childhood curriculum leveraging the Play-Way methodology across nursery and
+                                kindergarten tiers.</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="text-playful-yellow text-lg leading-none">✨</span> <span>Coached and mentored a
+                                team of 8 educators in advanced phonics instruction and interactive classroom
+                                management.</span></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <!-- Job 5: APS -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-playful-dark shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-2 transition-transform h-full flex flex-col md:col-span-2 md:w-1/2 md:mx-auto"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="mb-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-display text-2xl text-playful-dark">School Teacher</h3>
+                            <span
+                                class="bg-gray-200 text-playful-dark font-bold text-xs px-3 py-1 rounded-full border-2 border-playful-dark whitespace-nowrap">Jan
+                                '16 – Apr '17</span>
+                        </div>
+                        <p class="text-indigo-500 font-bold text-lg">APS, Prayagraj</p>
+                    </div>
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-3 mb-4">
+                        <p class="text-sm font-bold text-gray-500">Subjects: English, Mathematics, EVS | CBSE/ICSE</p>
+                    </div>
+                    <ul class="space-y-3 font-semibold text-gray-600 text-sm flex-grow">
+                        <li class="flex items-start gap-2"><span class="text-gray-400 text-lg leading-none">✨</span>
+                            <span>Engineered and delivered dynamic CBSE/ICSE lesson plans, seamlessly blending traditional pedagogy with ICT-based learning.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-gray-400 text-lg leading-none">✨</span>
+                            <span>Cultivated a highly inclusive, psychologically safe classroom environment that championed critical thinking and student voice.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-gray-400 text-lg leading-none">✨</span>
+                            <span>Conducted deep-dive learning analyses to implement targeted, differentiated instruction that maximized student potential.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Award Highlight -->
+    <section class="py-20 px-4 sm:px-6 md:px-8 bg-playful-yellow border-y-4 border-playful-dark relative z-10 overflow-hidden">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
+            <!-- Animated Trophy -->
+            <div class="relative" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="absolute inset-0 bg-white rounded-full scale-[1.5] opacity-50 animate-pulse"></div>
+                <div class="text-[120px] leading-none relative z-10 animate-[bounce_3s_infinite]">🏆</div>
+                <!-- Spinning stars -->
+                <div class="absolute -top-4 -right-4 text-4xl animate-[spin_4s_linear_infinite] origin-center z-20">⭐
+                </div>
+                <div
+                    class="absolute -bottom-2 -left-4 text-4xl animate-[spin_5s_linear_infinite_reverse] origin-center z-20">
+                    ✨</div>
+            </div>
+
+            <div class="text-center md:text-left z-10" data-aos="fade-up" data-aos-delay="200">
+                <div
+                    class="inline-block bg-white text-playful-coral font-display tracking-wide px-4 py-1 rounded-full border-2 border-playful-dark mb-4 transform -rotate-2">
+                    Major Achievement
+                </div>
+                <h2 class="font-display text-4xl md:text-5xl text-playful-dark mb-4">Customer Care Star & Teacher of the Year</h2>
+                <h3
+                    class="text-xl font-bold text-playful-dark mb-4 bg-white/50 inline-block px-4 py-1 rounded-xl border-2 border-playful-dark border-dashed">
+                    Awards</h3>
+                <p class="text-lg font-bold text-playful-dark leading-relaxed max-w-lg">
+                    Recognized for exceptional pedagogical leadership, innovative teaching methods, and outstanding customer empathy and solutions-oriented support.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 sm:px-6 md:px-8 max-w-6xl mx-auto relative z-10">
+        <h2 class="font-display text-4xl mb-16 text-center text-playful-dark" data-aos="fade-up">My Toolbox 🎨</h2>
+
+        <div class="space-y-12">
+
+            <!-- Pillar 4 (New) -->
+            <div data-aos="fade-up">
+                <h3 class="font-display text-2xl mb-6 flex items-center gap-3">
+                    <span
+                        class="bg-playful-mint text-playful-dark w-10 h-10 rounded-full flex items-center justify-center border-2 border-playful-dark shadow-[2px_2px_0px_0px_rgba(51,65,85,1)]">🎧</span>
+                    Customer Support Tools
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <h4 class="font-bold text-lg text-playful-dark mb-2">💬 Multichannel</h4>
+                        <p class="text-sm font-semibold text-gray-500">Chat, Email, Inbound/Outbound Phone</p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <h4 class="font-bold text-lg text-playful-dark mb-2">🤝 CSAT & De-escalation</h4>
+                        <p class="text-sm font-semibold text-gray-500">Conflict Resolution, Empathy, Active Listening</p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <h4 class="font-bold text-lg text-playful-dark mb-2">💻 CRM & Software</h4>
+                        <p class="text-sm font-semibold text-gray-500">Zendesk, Data Entry, Ticketing Systems</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pillar 1 -->
+            <div data-aos="fade-up">
+                <h3 class="font-display text-2xl mb-6 flex items-center gap-3">
+                    <span
+                        class="bg-playful-coral text-white w-10 h-10 rounded-full flex items-center justify-center border-2 border-playful-dark shadow-[2px_2px_0px_0px_rgba(51,65,85,1)]">📋</span>
+                    Core Teaching Competencies
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div
+                        class="bg-white p-4 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] text-center hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <div class="text-3xl mb-2">🗺️</div>
+                        <h4 class="font-bold text-sm text-playful-dark">Curriculum Mapping</h4>
+                    </div>
+                    <div
+                        class="bg-white p-4 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] text-center hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <div class="text-3xl mb-2">🎭</div>
+                        <h4 class="font-bold text-sm text-playful-dark">Play-Way Method</h4>
+                    </div>
+                    <div
+                        class="bg-white p-4 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] text-center hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <div class="text-3xl mb-2">🌟</div>
+                        <h4 class="font-bold text-sm text-playful-dark">Inclusive Classroom</h4>
+                    </div>
+                    <div
+                        class="bg-white p-4 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] text-center hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <div class="text-3xl mb-2">📈</div>
+                        <h4 class="font-bold text-sm text-playful-dark">CCE Evaluation</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div data-aos="fade-up">
+                <h3 class="font-display text-2xl mb-6 flex items-center gap-3">
+                    <span
+                        class="bg-playful-yellow text-playful-dark w-10 h-10 rounded-full flex items-center justify-center border-2 border-playful-dark shadow-[2px_2px_0px_0px_rgba(51,65,85,1)]">📚</span>
+                    Subject Expertise
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] flex gap-4 items-center hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <div class="text-4xl bg-playful-yellow/30 p-3 rounded-2xl border-2 border-playful-dark">📖</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-playful-dark mb-1">English Language</h4>
+                            <p class="text-sm font-semibold text-gray-500">Phonics, Creative Writing, CLT</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] flex gap-4 items-center hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <div class="text-4xl bg-playful-blue/30 p-3 rounded-2xl border-2 border-playful-dark">📐</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-playful-dark mb-1">Mathematics</h4>
+                            <p class="text-sm font-semibold text-gray-500">Concept-Based, Mental Math</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] flex gap-4 items-center hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <div class="text-4xl bg-playful-mint/40 p-3 rounded-2xl border-2 border-playful-dark">🌱</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-playful-dark mb-1">EVS</h4>
+                            <p class="text-sm font-semibold text-gray-500">Nature Study, Experiential Science</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] flex gap-4 items-center hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <div class="text-4xl bg-purple-200 p-3 rounded-2xl border-2 border-playful-dark">💻</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-playful-dark mb-1">Computer Science</h4>
+                            <p class="text-sm font-semibold text-gray-500">Digital Literacy, Internet Safety</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div data-aos="fade-up">
+                <h3 class="font-display text-2xl mb-6 flex items-center gap-3">
+                    <span
+                        class="bg-playful-blue text-playful-dark w-10 h-10 rounded-full flex items-center justify-center border-2 border-playful-dark shadow-[2px_2px_0px_0px_rgba(51,65,85,1)]">🎓</span>
+                    Leadership & Tools
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <h4 class="font-bold text-lg text-playful-dark mb-2">🏛️ Policy Implementation</h4>
+                        <p class="text-sm font-semibold text-gray-500">NEP 2020, 21st Century Skills</p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <h4 class="font-bold text-lg text-playful-dark mb-2">👥 Mentoring</h4>
+                        <p class="text-sm font-semibold text-gray-500">Instructional Coaching, Observation</p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-2 transition-transform duration-300 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] cursor-pointer">
+                        <h4 class="font-bold text-lg text-playful-dark mb-2">🌐 EdTech</h4>
+                        <p class="text-sm font-semibold text-gray-500">Google Workspace, Smart Boards</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education & Certs -->
+    <section id="education" class="py-20 px-4 sm:px-6 md:px-8 bg-playful-coral/10 border-y-4 border-playful-dark relative z-10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+
+            <!-- Education -->
+            <div data-aos="fade-right">
+                <h2 class="font-display text-4xl mb-8 text-playful-dark">Education 🎓</h2>
+                <div class="space-y-4">
+
+                    <div
+                        class="bg-white p-6 rounded-3xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] flex gap-4 items-start transform hover:-rotate-1 transition-transform h-full">
+                        <div class="text-3xl bg-playful-mint/30 p-3 rounded-full border-2 border-playful-dark shrink-0">
+                            🎓</div>
+                        <div>
+                            <h3 class="font-display text-xl text-playful-dark mb-1">Master of Arts – Economics</h3>
+                            <p class="font-semibold text-gray-500 text-sm">KMCLU University</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-3xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] flex gap-4 items-start transform hover:rotate-1 transition-transform h-full">
+                        <div class="text-3xl bg-playful-blue/30 p-3 rounded-full border-2 border-playful-dark shrink-0">
+                            🎓</div>
+                        <div>
+                            <h3 class="font-display text-xl text-playful-dark mb-1">Bachelor of Education (B.Ed)</h3>
+                            <p class="font-semibold text-gray-500 text-sm mb-2">Rama Degree College, Lucknow</p>
+                            <span
+                                class="bg-playful-blue/20 text-playful-dark font-bold text-xs px-3 py-1 rounded-full border-2 border-playful-dark">Early
+                                Childhood & Class Mgt</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-3xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] flex gap-4 items-start transform hover:-rotate-1 transition-transform h-full">
+                        <div
+                            class="text-3xl bg-playful-yellow/30 p-3 rounded-full border-2 border-playful-dark shrink-0">
+                            🎓</div>
+                        <div>
+                            <h3 class="font-display text-xl text-playful-dark mb-1">Bachelor of Arts (B.A.)</h3>
+                            <p class="font-semibold text-gray-500 text-sm">Veer Bahadur Singh Purvanchal University</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div data-aos="fade-left">
+                <h2 class="font-display text-4xl mb-8 text-playful-dark">Certifications 🏆</h2>
+                <div class="space-y-4">
+                    
+                    <div
+                        class="bg-white p-6 rounded-3xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] flex gap-4 items-start transform hover:-rotate-1 transition-transform h-full">
+                        <div
+                            class="text-3xl bg-playful-yellow/30 p-3 rounded-full border-2 border-playful-dark shrink-0">
+                            🤖</div>
+                        <div>
+                            <h3 class="font-display text-xl text-playful-dark mb-1">Generative AI Foundations</h3>
+                            <p class="font-semibold text-gray-500 text-sm">UpGrad (Expected Aug 2025)</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-3xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] flex gap-4 items-start transform hover:rotate-1 transition-transform h-full">
+                        <div class="text-3xl bg-playful-blue/30 p-3 rounded-full border-2 border-playful-dark shrink-0">
+                            💻</div>
+                        <div>
+                            <h3 class="font-display text-xl text-playful-dark mb-1">EdTech Integration</h3>
+                            <p class="font-semibold text-gray-500 text-sm">Google Workspace for Education, Smart
+                                Classroom Tools.</p>
+                        </div>
+                    </div>
+                    
+                    <div
+                        class="bg-white p-6 rounded-3xl border-2 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] flex gap-4 items-start transform hover:-rotate-1 transition-transform h-full">
+                        <div
+                            class="text-3xl bg-gray-200 p-3 rounded-full border-2 border-playful-dark shrink-0">
+                            🖥️</div>
+                        <div>
+                            <h3 class="font-display text-xl text-playful-dark mb-1">Course on Computer Concepts</h3>
+                            <p class="font-semibold text-gray-500 text-sm">NIELIT (May 2015)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-4 sm:px-6 md:px-8 max-w-4xl mx-auto relative z-10 text-center">
+        <h2 class="font-display text-4xl mb-4 text-playful-dark" data-aos="fade-up">Let's Connect! 📬</h2>
+        <p class="font-bold text-gray-500 mb-12" data-aos="fade-up">Interested in discussing opportunities?
+            Drop me a message.</p>
+
+        <div class="bg-white p-8 md:p-12 rounded-[40px] border-2 border-playful-dark shadow-[8px_8px_0px_0px_rgba(51,65,85,1)] text-left"
+            data-aos="zoom-in">
+            <form action="https://formsubmit.co/sinhavasudha1@gmail.com" method="POST"
+                class="space-y-6 font-bold text-gray-600">
+                <input type="hidden" name="_subject" value="New Contact Message from Playful Portfolio">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block mb-2 ml-2">Name</label>
+                        <input type="text" id="name" name="name" required minlength="2" maxlength="60"
+                            pattern="[a-zA-Z\s\-\.]+" title="Letters, spaces, hyphens, and periods only"
+                            class="w-full bg-playful-bg border-2 border-playful-dark rounded-2xl px-4 py-3 focus:outline-none focus:ring-4 focus:ring-playful-mint transition-all"
+                            placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 ml-2">Email</label>
+                        <input type="email" id="email" name="email" required maxlength="100"
+                            class="w-full bg-playful-bg border-2 border-playful-dark rounded-2xl px-4 py-3 focus:outline-none focus:ring-4 focus:ring-playful-mint transition-all"
+                            placeholder="Your Email">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="message" class="block mb-2 ml-2">Message</label>
+                    <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000"
+                        class="w-full bg-playful-bg border-2 border-playful-dark rounded-2xl px-4 py-3 focus:outline-none focus:ring-4 focus:ring-playful-mint transition-all resize-none"
+                        placeholder="How can I help you?"></textarea>
+                </div>
+
+                <div class="text-center pt-4">
+                    <button type="submit"
+                        class="bg-playful-coral text-white font-display text-xl px-12 py-4 rounded-full border-2 border-playful-dark hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] transition-all hover:-translate-y-1 w-full sm:w-auto">
+                        Send Message 🚀
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-playful-dark text-white text-center py-8 font-bold relative z-10 border-t-4 border-playful-coral">
+        <p>Built with ❤️ by Vasudha Sinha</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 bg-playful-yellow text-playful-dark p-4 rounded-full border-4 border-playful-dark shadow-[4px_4px_0px_0px_rgba(51,65,85,1)] hover:-translate-y-2 hover:shadow-[6px_6px_0px_0px_rgba(51,65,85,1)] transition-all z-50 opacity-0 invisible flex items-center justify-center cursor-pointer">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
